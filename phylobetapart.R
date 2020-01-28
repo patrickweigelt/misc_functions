@@ -1,7 +1,7 @@
 # Partition phylogenetic beta diversity (Sorensen) into nestedness and turnover components (Baselga 2012, GEB; Leprieur et al. 2012, PlosONE),
 # like in phylo.beta.pair {betapart} but faster thanks to {PhyloMeasures} (Tsirogiannis & Sandel 2016, Ecography)
 
-library(Phylomeasures)
+library(PhyloMeasures)
 
 beta.pair.phylomeasures <- function(tree, matrix){
 

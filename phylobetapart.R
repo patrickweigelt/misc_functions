@@ -18,7 +18,7 @@ beta.pair.phylomeasures <- function(tree, matrix){
   spec_PD_min <- sapply(spec_PD, function(x) sapply(spec_PD, function(y) min(x,y)))
 
   # Phylogenetic Simpson beta diversity
-  phylobeta_sim <- 1-(spec_cbl_small/spec_PD_min)
+  phylobeta_sim <- 1-(spec_cbl/spec_PD_min)
 
   # Phylogenetic nestedness component of beta diversity
   phylobeta_sne <- phylobeta_sor - phylobeta_sim
